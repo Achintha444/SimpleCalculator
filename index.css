@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: sans-serif;
+}
+.headerBox{
+    min-width: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-15%);
+    box-sizing: border-box;
+    color: #000;
+    text-align: center;
+    background-color: gold;
+}
+.calcBox{
+    width: 320px;
+    height: 420px;
+    background-color:rgb(255, 215 , 0,0.98);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding-top: 45px;
+}
+
+.calcBox::after{
+    opacity: 0.5;
+}
+
+.calcBox input{
+    width: 160px;
+    left: 50%;
+    transform: (-50%,0%);
+    margin-bottom: 20px;
+    margin-left:80px;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 15px;
+    background-position: center;
+    transition: all 1s;
+
+}
+
+.calcBox input:hover{
+    transform: scale(1.10);
+}
+
+.calcBox button{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 60px;
+    background: #000;
+    color: goldenrod;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: all 2s;
+    transition-delay:0.1s;
+
+}
+
+.operators{
+    padding-left: 30px;
+}
+
+.calcBox button:hover{
+    cursor: pointer;
+    background: goldenrod;
+    color: #000;
+    transform: scale(1.15);
+
+}
+
+.answer{
+    width: 160px;
+    height: 40px;
+    color: #004;
+    padding-left: 78px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+}
